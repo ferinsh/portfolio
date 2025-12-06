@@ -1,0 +1,22 @@
+    /* VideoBackground.css */
+    .video-background-container {
+      position: fixed; /* Or 'absolute' if within a specific parent */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Hide any overflow from the video */
+      z-index: -1; /* Ensure the video stays behind other content */
+    }
+
+    .background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover the entire container, cropping as needed */
+    }
+
+    .content-overlay {
+      position: relative; /* Position content relative to the container */
+      z-index: 1; /* Ensure content appears above the video */
+      /* Add styling for your content overlay as needed */
+    }

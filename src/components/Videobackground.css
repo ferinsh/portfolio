@@ -13,6 +13,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover; /* Cover the entire container, cropping as needed */
+      display: block;
     }
 
     .content-overlay {

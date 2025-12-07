@@ -98,9 +98,6 @@ body, #root {
   width: 100%;
 }
 
-#hero-image {
-  /* justify-content: start; */
-}
 
 @media screen and (min-width: 768px) {
   .hero {

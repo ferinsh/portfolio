@@ -18,10 +18,11 @@ const ProjectBar: React.FC = () => {
     tags = [...new Set(tags)]
 
     return (<>
-        <h1 style={{color: "white", textAlign: 'left', marginBottom: "1rem"}}>Projects</h1>
         <section className="project-bar" id="project-bar">
+            <h1 className='project-bar-title'>Projects</h1>
             <ProjectBarheader tags={tags}/>
             <ProjectBarContent projects={projects}/>
+            <input className='project-bar-search' />
         </section>
     </>)
 }

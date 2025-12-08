@@ -97,7 +97,30 @@ body, #root {
   margin: 0;
   width: 100%;
 }
+#hero-detail-name > p{
+  transform: translateX(100%);
+  animation: heroname-comein 1s forwards;
+}
+@keyframes heroname-comein {
+    0% {
+      
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+#hero-detail-byline > p {
+  transform: translateX(-100%);
+  animation: herobyline-comein 1s forwards 1s;
+}
+@keyframes herobyline-comein {
+  0% {
 
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -114,5 +137,9 @@ body, #root {
 
   .hero-detail-item {
     text-align: end;
+  }
+
+  #hero-detail-byline > p {
+    transform: translateX(100%);
   }
 }

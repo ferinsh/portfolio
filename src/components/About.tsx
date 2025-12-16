@@ -28,24 +28,27 @@ const About = () => {
     const words = aboutContent.desc.split(" ")
 
     return (
+        <>
+        
+            <h2 className={`about-header ${visible ? 'reveal': ''}`}><span className={'about-header-text'}>About</span></h2>
+            <section ref={sectionRef} className="about">
 
-        <section ref={sectionRef} className="about">
-            <h3 className={`about-header ${visible ? 'reveal': ''}`}><span className={'about-header-text'}>About</span></h3>
+                <p className={`about-desc ${visible ? 'reveal' : ''}`}>
+                    {words.map((word, index) => (
+                        <span
+                            key={index}
+                            className="word"
+                            style={{
+                                animationDelay: visible ? `${index * 0.06}s` : '0s'
+                            }}
+                        >
+                            {word}{' '}
+                        </span>
+                    ))}
+                </p>
+            </section>
+        </>
 
-            <p className={`about-desc ${visible ? 'reveal' : ''}`}>
-                {words.map((word, index) => (
-                    <span
-                        key={index}
-                        className="word"
-                        style={{
-                            animationDelay: visible ? `${index * 0.06}s` : '0s'
-                        }}
-                    >
-                        {word}{' '}
-                    </span>
-                ))}
-            </p>
-        </section>
     )
 }
 

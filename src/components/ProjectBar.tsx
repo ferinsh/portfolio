@@ -19,7 +19,7 @@ const ProjectBar: React.FC = () => {
 
     return (<>
         <section className="project-bar" id="project-bar">
-            <h1 className='project-bar-title'>Projects</h1>
+            <h2 className='project-bar-title'>Projects</h2>
             <ProjectBarheader tags={tags}/>
             <ProjectBarContent projects={projects}/>
             {/* <input className='project-bar-search' /> */}

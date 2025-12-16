@@ -29,7 +29,7 @@
 
 .about-header {
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
     margin-bottom: 1rem;
     overflow: hidden; /* hides text during slide-in */
     display: flex;

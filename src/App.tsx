@@ -3,6 +3,7 @@ import ProjectBar from "./components/ProjectBar"
 import VideoBackground from './components/VideoBackground'
 import Header from './components/Header'
 import Hero from "./components/Hero"
+import About from './components/About'
 
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Hero />
       <ProjectBar />
+      <About />
     </>
   )
 }

@@ -22,7 +22,7 @@ const ProjectBar: React.FC = () => {
             <h1 className='project-bar-title'>Projects</h1>
             <ProjectBarheader tags={tags}/>
             <ProjectBarContent projects={projects}/>
-            <input className='project-bar-search' />
+            {/* <input className='project-bar-search' /> */}
         </section>
     </>)
 }

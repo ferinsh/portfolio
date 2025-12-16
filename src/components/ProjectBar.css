@@ -1,10 +1,11 @@
 
 .project-bar {
-  height: 100dvh;
-  width: 100%;
-  /* background-color: red; */
-  color: white;
-  margin-bottom: 1rem;
+    height: 100dvh;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    margin-bottom: 1rem;
 }
 
 .project-bar-title {
@@ -53,7 +54,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     height: 70dvh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     
     /* background-color: white; */
     overflow-y: scroll;
